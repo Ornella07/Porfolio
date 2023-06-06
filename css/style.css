@@ -1,0 +1,453 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+
+:root{
+    --bg-color-1:#73626e;
+    --bg-color-2:#413e4a;
+    --font-text:#f7e4be;
+    --font-prin:#b38184;
+    --text-primary:#d5d2c8;
+    --font-sec:#c99e93;
+    --font-ter:#fc9d9a;
+    --fechas:#a1a1a1;
+    --font:'Roboto Mono', monospace;;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+a .ir-arriba{
+    display: flex;
+    padding: 11px;
+    font-size: 23px;
+    background:var(--font-ter);
+    color: var(--bg-color-1);
+    position: fixed;
+    cursor: pointer;
+    bottom:0;
+    right: 0;
+    border-radius: 100%;
+    align-items: center;
+
+}
+.container{
+    display:flex;
+}
+.text-infor{
+    color: var(--font-ter);
+}
+.navbar {
+    width: 100%;
+    height: 17vh;
+    background-color:var(--bg-color-2) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+    align-items: center;
+    
+}
+.bg-primary{
+    background-color: var(--bg-color-2);
+}
+.navbar{
+    background-color: var(--bg-color-2);
+}
+.navbar  img{
+    width: 130px;
+    margin-left: 30px;
+    margin-top:30px;
+
+}
+.navbar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+    right: -10px;
+}
+.navbar li{
+    margin-bottom: 10px;
+    margin-left:30px;
+}
+
+.navbar a{
+    font-family: var(--font);
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    color: var(--font-text);
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.navbar a:hover{
+    color:var(--font-sec);
+}
+
+
+
+/* Contenedor  */
+.container-fluid{
+    background-color:var(--bg-color-1);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.resumen-section{
+    display: flex;
+    flex-direction: row;
+    
+    margin-left: 100px;
+    margin-top:130px;
+    margin: 50px;
+}
+ .resumen-section h1{
+    font-size: 65px;
+    text-transform: uppercase;
+    line-height: 1.3;
+    color: var(--font-prin);
+}
+.d-block{
+    font-size: 65px;
+    text-transform: uppercase;
+    line-height: 1.3;
+    color: var(--font-prin);
+}
+.resumen-section .text-prima{
+    color: var(--text-primary);
+    
+}
+.resumen-section .subheading{
+    font-family: var(--font);
+    font-size: 30px;
+    color: var(--text-primary);
+    line-height: 1.4;
+
+}
+
+.btn{
+    margin-top:40px;
+    margin-bottom: 50px;
+    border: none;
+    font-family: var(--font);
+    line-height: 1.6;
+    font-weight: 400;
+    filter:drop-shadow(8px 8px 3px var(--bg-color-2))
+}
+.btn .button_top{
+    background-color:var(--font-sec);
+    color: white; 
+    padding: 10px 20px;
+    font-size: 17px;
+    border: none; 
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn .button_top:hover{
+    background-color: var(--bg-color-2);
+    color: var(--font-sec);
+    filter:drop-shadow(8px 8px 9px var(--font-text));
+}
+
+/* Redes */
+.redes-sociales{
+    font-size: 30px;
+    line-height: 2.6;
+    
+}
+.icon-social{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color:var(--font-prin);
+    border-radius:100%;
+    margin-right: 15px;
+
+}
+.icon-social {
+    text-decoration: none;
+    color: #413e4a;
+}
+.icon-social:hover{
+    background-color:var(--bg-color-2);
+    color: var(--font-prin);
+}
+hr{
+    
+    color: inherit;
+    background-color: #a54689;
+    border: 1;
+    opacity: 0.25;
+}
+/* Sobre MI */
+
+.resumen-section h2{
+    font-size: 45px;
+    text-transform: uppercase;
+    line-height: 1.3;
+    color: var(--font-prin);
+}
+.resumen-section .text-secundary{
+    color: var(--text-primary);
+}
+.lead{
+    font-size: 18px;
+    font-family: var(--font);
+    color: var(--font-sec);
+    line-height: 2.2;
+    margin-top: 10px;
+
+}
+.info{
+    color: var(--font-ter);
+    font-size: 21px;
+    font-weight: 400;
+    font-family: var(--font);
+    text-transform: uppercase;
+    margin-top: 20px;
+    
+}
+.resumen-section-content{
+    width:100%;
+}
+.box-container{
+    width:100%;
+    padding: 20px;    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+}
+
+.proyecto img{
+    width: 500px;
+    border-radius: 30px;
+    filter:drop-shadow(8px 8px 6px var(--bg-color-2))
+}
+
+.lenguajes .leng{
+    width: 70px;
+    margin-left: 5px;
+
+}
+.proyecto .lenguajes{
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 5px;
+    
+}
+h5{
+    font-size: 21px;
+    font-weight: 700;
+    font-family: var(--font);
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: var(--font-ter);
+}
+p{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: var(--font);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: var(--font-prin);
+}
+
+/* Educacion */
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    font-family:var(--font) ;
+    font-size: 30px;
+    text-transform: uppercase;
+    color:var(--font-ter);
+    line-height:1.7;
+}
+.subheadin{
+    font-family:var(--font);
+    font-weight: 200;
+    color: var(--font-text);
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.inf{
+
+    font-size: 15px;
+    color: var(--font-sec);
+    font-family: var(--font);
+    line-height: 1.5;
+}
+.flex-grow-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-sec{
+    margin-top: 10px;
+    color: var(--fechas);
+    font-size: 14px;
+    text-transform:capitalize;
+    letter-spacing: 1.3px;
+    font-family: var(--font);
+}
+.box-content{
+    width:100%;
+    padding: 20px;    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+}
+.sub{
+    font-family:var(--font);
+    font-weight: 400;
+    color: var(--fechas);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.imagen{
+    width: 90px;
+    margin-left: 10px;
+} 
+.boot{
+    width: 125px;
+}
+.fa-ul{
+    list-style-type: none;
+}
+.lis{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.fa-li{
+    left: 10px;
+    position: absolute;
+
+}
+.fa-li i{
+    list-style: none;
+    font-size: 30px;
+    color: var(--fechas);
+}
+p.lead{
+    font-size: 20px;
+    width: 400;
+}
+p a{
+    text-decoration: none;
+    color: var(--font-prin);
+}
+
+
+
+/* Media Query */
+@media screen and (max-width: 1424px){
+    .navbar a{
+        font-family: var(--font);
+        font-size: 15px;
+    }
+
+    .navbar img{
+        width: 130px;
+        margin-left:40px;
+        margin-top:30px;
+    }
+    .container-fluid{
+        background-color:var(--bg-color-1);
+        display: flex;
+        flex-direction: column;
+        max-width:100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .box-container{
+        width:100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+            
+    } 
+    .navbar-toggler{
+        margin-right: 30px;
+    }
+    .navbar-brand{
+        margin-left: 30px;
+    }
+   
+    .d-block{
+        font-size: 20px;
+        text-transform: uppercase;
+        line-height: 1.3;
+        color: var(--font-prin);
+    }
+    .resumen-section h1{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 597px){
+    .container-fluid{
+        max-width: 120%;
+    }
+    .navbar a{
+        font-size: 10px;
+    }
+    .box-container{
+        padding: 0;
+    }
+    a .ir-arriba{
+        right: 18px;
+        bottom:15px;
+    }
+    a .ir-arriba i{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 449px){
+    .container-fluid{
+        max-width: 1200%;
+    }
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-color-2);
+        margin-top: 15px;
+        left: 0;
+    }
+    .resumen-section .texto-orne{
+        width: 260px;
+    }
+    .resumen-section .subheading {
+        font-size: 20px;
+    }
+    .proyecto img{
+        width: 350px;
+
+    }
+    .sof{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .sof .imagen{
+        width: 150px;
+        margin-bottom: 30px;
+    }
+
+}
